@@ -81,8 +81,8 @@ def about():
 def partA(): 
     if request.method == 'POST':  
 
-        #query = """ delete from t_answerchoice """ 
-        #executeUpdate(query) 
+        query = """ delete from t_answerchoice """ 
+        executeUpdate(query) 
 
         for item in request.form :   
             if request.form[item] != "" :   
