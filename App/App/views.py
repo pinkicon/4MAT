@@ -90,7 +90,7 @@ def partA():
             if request.form[item] != "" :   
                 query = """ INSERT INTO t_answerchoice ( ChoiceCaseNo, Point )  VALUES (""" + item  + """,""" +  request.form[item] + """)"""
                 executeUpdate(query)  
-        return render_template('graph.html',
+        return render_template('graph_chartjs.html',
                         title='GRAPH',
                         message='THE 4MAT SYSTEM')
 
@@ -109,6 +109,6 @@ def partB():
 
 @app.route('/graph')
 def graph():
-    return render_template('graph.html',
+    return render_template('graph_chartjs.html',
                            title='GRAPH',
                            message='THE 4MAT SYSTEM')
