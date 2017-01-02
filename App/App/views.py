@@ -81,14 +81,15 @@ def about():
 
 @app.route('/partA', methods=['GET','POST']) 
 def partA(): 
-    if request.method == 'POST': 
+    if request.method == 'POST':  
 
-        for item in request.form :  
-            conn = connect_db()
-            curs = conn.cursor() 
-            query = """ INSERT INTO t_answerchoice ( ChoiceCaseNo, Point )  VALUES (""" + item  + """,""" +  request.form[item] + """)"""
-            curs.execute(query)
-            conn.commit()  
+        query = """ delete from t_answerchoice """ 
+        executeUpdate(query) 
+
+        for item in request.form :   
+            if request.form[item] != "" :   
+                query = """ INSERT INTO t_answerchoice ( ChoiceCaseNo, Point )  VALUES (""" + item  + """,""" +  request.form[item] + """)"""
+                executeUpdate(query)  
         return render_template('graph.html',
                         title='GRAPH',
                         message='THE 4MAT SYSTEM')
