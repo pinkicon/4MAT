@@ -5,21 +5,25 @@
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
             <div class="ibox-title">  
-                <h5>{{ title }}  </h5> 
+                <h5> PART A  </h5> 
             </div>
             <div class="ibox-title"> 
                 <h5>
-                    <small>{{ message }}</small>
+                    <small>아래 질문들은 당신의 학습행동과 참여 선호도를 나타내도록 만들어져 있습니다. 어떤 항목이 가장 본인과 비슷합니까? 본인과 가장 비슷한 항목에 "4"를 기입하고 가장 비슷하지 않은 항목에 "1" 을 기입하십시오. 나머지 항목에는 "2", "3" 을 기입하십시오. 4개의 모든 숫자를 한번씩만 기입해 주십시오</small>
                 </h5>
             </div>
             <div class="ibox-content">
                 <form method="get" class="form-horizontal"> 
+                    
+                    {% for exam in examples %} 
                     <!--시작 -->
                     <div class="hr-line-dashed"></div>
                     <div class="form-group"> 
-                        <label class="col-sm-2 control-label"><small> 나는 __ 에 탁월하다</small></label>
+                        <label class="col-sm-2 control-label"><small> {{exam[1]}} </small></label>
                         <div class="input-group">
-                            <input type="text" class="form-control" value="실현 가능한 결정을 내리는것 ">
+                            {% for choice in choices %}
+                            {% if exam[0] == choice[0] %}
+                            <input type="text" class="form-control" value="{{choice[2]}}" hidden="{{choice[4]}}">
                             <div class="input-group-btn">
                                 <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">1<span class="caret"></span></button>
                                 <ul class="dropdown-menu pull-right">
@@ -28,44 +32,15 @@
                                     <li><a href="#">3</a></li> 
                                     <li><a href="#">4</a></li>
                                 </ul>
-                            </div>
-                            <input type="text" class="form-control" value="확실한 결론을 내리는것 ">
-                            <div class="input-group-btn">
-                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">2 <span class="caret"></span></button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li> 
-                                    <li><a href="#">4</a></li>
-                                </ul>
-                            </div>
-                            <input type="text" class="form-control" value="숨겨진 상관관계를 발견하는것 ">
-                            <div class="input-group-btn">
-                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">3 <span class="caret"></span></button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li> 
-                                    <li><a href="#">4</a></li>
-                                </ul>
-                            </div>
-                            <input type="text" class="form-control" value="타인의 감정을 존중하는 것  ">
-                            <div class="input-group-btn">
-                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">4 <span class="caret"></span></button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li> 
-                                    <li><a href="#">4</a></li>
-                                </ul>
-                            </div>
-
+                            </div> 
+                            {% endif %}
+                            {% endfor %}
                         </div> 
                     </div>
-
                     <div class="hr-line-dashed"></div>
-                     
                     <!-- 끝 -->  
+                    {% endfor %}
+
                     <div class="hr-line-dashed"></div>
                     <div class="form-group">
                         <div class="col-sm-4 col-sm-offset-2">

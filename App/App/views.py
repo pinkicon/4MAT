@@ -1,55 +1,38 @@
 
-
-
-#"""
-#Routes and views for the flask application.
-#"""
-
-#from datetime import datetime
-#from flask import render_template
-#from App import app
-
-#@app.route('/')
-#@app.route('/home')
-#def home():
-#    """Renders the home page."""
-#    return render_template(
-#        'index.html',
-#        title='Home Page',
-#        year=datetime.now().year,
-#    )
-
-#@app.route('/contact')
-#def contact():
-#    """Renders the contact page."""
-#    return render_template(
-#        'contact.html',
-#        title='Contact',
-#        year=datetime.now().year,
-#        message='Your contact page.'
-#    )
-
-#@app.route('/about')
-#def about():
-#    """Renders the about page."""
-#    return render_template(
-#        'about.html',
-#        title='About',
-#        year=datetime.now().year,
-#        message='Your application description page.'
-#    )
-
-
-
-"""
-Routes and views for the flask application.
-"""
-
-from datetime import datetime
-from flask import render_template
+from datetime import datetime 
 from App import app
-from flask import g 
+from flask import g , Flask, request, session, url_for, redirect, render_template, abort, flash 
+from hashlib import md5
+from contextlib import closing 
+from werkzeug.security import check_password_hash, generate_password_hash 
 import pymysql
+
+
+def connect_db():
+    return pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8') 
+
+def query_db(query) : 
+    conn = pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8') 
+    cur = conn.cursor()
+    cur.execute(query)  
+    rv = [] 
+    for row in cur._rows : 
+        rv.append(row)
+    return rv  
+
+def get_choicecase(exampleNo):
+    rv = g.db.execute('SELECT ChoiceCaseNo, Title, FigureType FROM t_choicecase where exampleNo = ?' , exampleNo).fetchone() 
+    return rv 
+
+@app.teardown_request
+def teardown_request(exception):
+    if hasattr(g, 'db'):
+        g.db.close() 
+
+@app.before_request
+def before_request():
+     g.db = connect_db() 
+
 
 @app.route('/')
 @app.route('/home')
@@ -62,6 +45,8 @@ def home():
         title='Home Page',
         year=datetime.now().year,
     )
+
+
 
 @app.route('/contact')
 def contact():
@@ -85,37 +70,14 @@ def about():
 
 @app.route('/partA') 
 def partA():
+      
+     #return render_template('partA.html' ,
+     #                       examples = query_db('''select exampleTitle  From t_example where exampleType='A' order by exampleNo asc limit 10'''))  
 
-    returnUrl = "partA.html" 
-
-    try :  
-
-        ##MySql Connection 연결 
-        conn = pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8')
-
-        ##Connection으로 부터 Cursor생성 
-        curs = conn.cursor()
-
-        ##SQL문 실행 
-        sql = "select exampleTitle  From t_example where exampleType='A'" 
-        curs.execute(sql) 
-
-        ##데이터 fetch 
-        #rows = curs.fetchall()
-        #print(rows) 
-
-        rows = curs._rows
-
-        conn.close() 
-        ### print(rows[0])  # 첫번째 row: (1, '김정수', 1, '서울')
-
-    except MySQLError as e : 
-        print(e) 
-    else : 
-           
-        return render_template(returnUrl , 
-                           title = 'PART A',
-                           message='아래 질문들은 당신의 학습행동과 참여 선호도를 나타내도록 만들어져 있습니다. 어떤 항목이 가장 본인과 비슷합니까? 본인과 가장 비슷한 항목에 "4"를 기입하고 가장 비슷하지 않은 항목에 "1" 을 기입하십시오. 나머지 항목에는 "2", "3" 을 기입하십시오. 4개의 모든 숫자를 한번씩만 기입해 주십시오')
+     return render_template('partA.html', 
+                            examples = query_db('''select exampleNo, exampleTitle  From t_example where exampleType='A' order by exampleNo asc limit 10'''),
+                            choices = query_db('''SELECT A.exampleNo, A. exampleTItle  , B.Title ChoiceCase , B.ChoiceCaseNo, B.FiqureType  FROM t_example A, t_choicecase B 
+WHERE A.exampleNo = B.exampleNo order by A.exampleNo asc '''))
 
 
 @app.route('/partB')
