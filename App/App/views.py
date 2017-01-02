@@ -49,7 +49,7 @@ from datetime import datetime
 from flask import render_template
 from App import app
 from flask import g 
-#from pymysql import
+import pymysql
 
 @app.route('/')
 @app.route('/home')
@@ -86,31 +86,42 @@ def about():
 @app.route('/partA') 
 def partA():
 
-    ##MySql Connection 연결 
-    #conn = pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8')
+    returnUrl = "partA.html" 
 
-    ##Connection으로 부터 Cursor생성 
-    #curs = conn.cursor()
+    try :  
 
-    ##SQL문 실행 
-    #sql = "select * From t_example where exampleType='A'" 
-    #curs.execute(sql) 
+        ##MySql Connection 연결 
+        conn = pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8')
 
-    ##데이터 fetch 
-    #rows = curs.fetchall()
-    #print(rows) 
-    
-    ### print(rows[0])  # 첫번째 row: (1, '김정수', 1, '서울')
+        ##Connection으로 부터 Cursor생성 
+        curs = conn.cursor()
 
-    #conn.close()
+        ##SQL문 실행 
+        sql = "select exampleTitle  From t_example where exampleType='A'" 
+        curs.execute(sql) 
 
-    return render_template('partA.html' , 
+        ##데이터 fetch 
+        #rows = curs.fetchall()
+        #print(rows) 
+
+        rows = curs._rows
+
+        conn.close() 
+        ### print(rows[0])  # 첫번째 row: (1, '김정수', 1, '서울')
+
+    except MySQLError as e : 
+        print(e) 
+    else : 
+           
+        return render_template(returnUrl , 
                            title = 'PART A',
                            message='아래 질문들은 당신의 학습행동과 참여 선호도를 나타내도록 만들어져 있습니다. 어떤 항목이 가장 본인과 비슷합니까? 본인과 가장 비슷한 항목에 "4"를 기입하고 가장 비슷하지 않은 항목에 "1" 을 기입하십시오. 나머지 항목에는 "2", "3" 을 기입하십시오. 4개의 모든 숫자를 한번씩만 기입해 주십시오')
 
 
 @app.route('/partB')
 def partB():
+
+
     return render_template('partB.html',
                            title='PART B',
                            message='각 문항마다 가장 당신을 잘 표현하는 항목에 표시하시오') 
