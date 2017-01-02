@@ -13,7 +13,7 @@
                 </h5>
             </div>
             <div class="ibox-content">
-                <form method="get" class="form-horizontal"> 
+                <form method="post" class="form-horizontal"> 
                     
                     {% for exam in examples %} 
                     <!--시작 -->
@@ -25,7 +25,7 @@
                             {% if exam[0] == choice[0] %}
                             <input type="text" class="form-control" value="{{choice[2]}}" hidden="{{choice[4]}}"> 
                             <div>
-                                 <input type="text" name="{{choice[3]}}_txt" class="form-control" hidden="{{choice[4]}}" > 
+                                 <input type="text" name="{{choice[3]}}" class="form-control" hidden="{{choice[4]}}" > 
                             </div> 
                             {% endif %}
                             {% endfor %}

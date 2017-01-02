@@ -11,14 +11,27 @@ import pymysql
 def connect_db():
     return pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8') 
 
-def query_db(query) : 
-    conn = pymysql.connect(host='localhost' , user='root', password='root', db='world', charset='utf8') 
-    cur = conn.cursor()
-    cur.execute(query)  
+def executeQuery(query) : 
+    conn = connect_db()
+    curs = conn.cursor()
+    curs.execute(query)  
     rv = [] 
-    for row in cur._rows : 
+    for row in curs._rows : 
         rv.append(row)
+
+    conn.close()
     return rv  
+
+def executeUpdate(query): 
+    conn = connect_db()
+    curs = conn.cursor() 
+    curs.execute(query)
+    conn.commit()  
+
+
+def execute(query):
+    return true 
+     
 
 def get_choicecase(exampleNo):
     rv = g.db.execute('SELECT ChoiceCaseNo, Title, FigureType FROM t_choicecase where exampleNo = ?' , exampleNo).fetchone() 
@@ -44,9 +57,7 @@ def home():
         pageUrl,
         title='Home Page',
         year=datetime.now().year,
-    )
-
-
+    ) 
 
 @app.route('/contact')
 def contact():
@@ -68,22 +79,29 @@ def about():
         message='Your application description page.'
     )
 
-@app.route('/partA') 
-def partA():
-      
-     #return render_template('partA.html' ,
-     #                       examples = query_db('''select exampleTitle  From t_example where exampleType='A' order by exampleNo asc limit 10'''))  
+@app.route('/partA', methods=['GET','POST']) 
+def partA(): 
+    if request.method == 'POST': 
 
-     return render_template('partA.html', 
-                            examples = query_db('''select exampleNo, exampleTitle  From t_example where exampleType='A' order by exampleNo asc limit 10'''),
-                            choices = query_db('''SELECT A.exampleNo, A. exampleTItle  , B.Title ChoiceCase , B.ChoiceCaseNo, B.FiqureType  FROM t_example A, t_choicecase B 
+        for item in request.form :  
+            conn = connect_db()
+            curs = conn.cursor() 
+            query = """ INSERT INTO t_answerchoice ( ChoiceCaseNo, Point )  VALUES (""" + item  + """,""" +  request.form[item] + """)"""
+            curs.execute(query)
+            conn.commit()  
+        return render_template('graph.html',
+                        title='GRAPH',
+                        message='THE 4MAT SYSTEM')
+
+    else : 
+        return render_template('partA.html', 
+                            examples = executeQuery('''select exampleNo, exampleTitle  From t_example where exampleType='A' order by exampleNo asc limit 10'''),
+                            choices = executeQuery('''select A.exampleNo, A. exampleTItle  , B.Title ChoiceCase , B.ChoiceCaseNo, B.FiqureType  FROM t_example A, t_choicecase B 
 WHERE A.exampleNo = B.exampleNo order by A.exampleNo asc '''))
 
 
 @app.route('/partB')
-def partB():
-
-
+def partB(): 
     return render_template('partB.html',
                            title='PART B',
                            message='각 문항마다 가장 당신을 잘 표현하는 항목에 표시하시오') 
