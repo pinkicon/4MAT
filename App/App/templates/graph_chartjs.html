@@ -23,65 +23,70 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li class="nav-header">
-                        <div class="dropdown profile-element">
-                            <span>
-                                <!--<img alt="image" class="img-circle" src="img/profile_small.jpg" />-->
-                            </span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="/templates/#">
-                                <span class="clear">
-                                    <span class="block m-t-xs">
-                                        <strong class="font-bold">infraDev</strong>
-                                    </span> <!--<span class="text-muted text-xs block">Art Director <b class="caret"></b></span>-->
+    <form>
+        <div id="wrapper">
+            <input type="hidden" id="circle" value="{{T_circle}}" />
+            <input type="hidden" id="triangle" value="{{T_triangle}}" />
+            <input type="hidden" id="star" value="{{T_star}}" />
+            <input type="hidden" id="square" value="{{T_square}}" />
+            <nav class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="nav-header">
+                            <div class="dropdown profile-element">
+                                <span>
+                                    <!--<img alt="image" class="img-circle" src="img/profile_small.jpg" />-->
                                 </span>
-                            </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="/templates/profile.html">Profile</a></li>
-                                <li><a href="/templates/contacts.html">Contacts</a></li>
-                                <li><a href="/templates/mailbox.html">Mailbox</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/templates/login.html">Logout</a></li>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="/templates/#">
+                                    <span class="clear">
+                                        <span class="block m-t-xs">
+                                            <strong class="font-bold">infraDev</strong>
+                                        </span> <!--<span class="text-muted text-xs block">Art Director <b class="caret"></b></span>-->
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="/templates/profile.html">Profile</a></li>
+                                    <li><a href="/templates/contacts.html">Contacts</a></li>
+                                    <li><a href="/templates/mailbox.html">Mailbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/templates/login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div class="logo-element">
+                                IN+
+                            </div>
+                        </li>
+                        <li class="active">
+                            <a href="/templates/index.html"><i class="fa fa-th-large"></i> <span class="nav-label">4MAT모델</span> <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li class="active"><a href="{{ url_for('partA') }}"> ::: PART A :::</a></li>
+                                <li><a href="{{ url_for('partB') }}"> ::: PART B ::: </a></li>
+                                <li><a href="{{ url_for('graph') }}"> ::: GRAPH  ::: </a></li>
                             </ul>
-                        </div>
-                        <div class="logo-element">
-                            IN+
-                        </div>
-                    </li>
-                    <li class="active">
-                        <a href="/templates/index.html"><i class="fa fa-th-large"></i> <span class="nav-label">4MAT모델</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active"><a href="{{ url_for('partA') }}"> ::: PART A :::</a></li>
-                            <li><a href="{{ url_for('partB') }}"> ::: PART B ::: </a></li>
-                            <li><a href="{{ url_for('graph') }}"> ::: GRAPH  ::: </a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
 
-            </div>
-        </nav>
-        <div id="page-wrapper" class="gray-bg dashbard-1">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Radar Chart Example</h5>
-                            <div ibox-tools></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="radarChart"></canvas>
+                </div>
+            </nav>
+            <div id="page-wrapper" class="gray-bg dashbard-1">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5><button id="btnMessage"  ">{{message}}</button></h5>
+                                <div ibox-tools></div>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <canvas id="radarChart"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </form>
     <!-- Mainly scripts -->
     <script src="/static/scripts/jquery-2.1.1.js"></script>
     <script src="/static/scripts/bootstrap.min.js"></script>
@@ -256,58 +261,114 @@
             //var ctx = document.getElementById("polarChart").getContext("2d");
             //var Polarchart = new Chart(ctx).PolarArea(polarData, polarOptions);
 
+            var radarData = {
+                labels: ["experience", "Find Meaning", "observation", "Orderly search", "Conceptualization", "Acquisition", "Action", "Creating"],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [(65 + 81) / 2, 65, (65 + 59) / 2, 59, (59 + 90) / 2, 90, (90 + 81) / 2, 81]
+                    },
+                    {
+                        label: "My Second dataset",
+                        fillColor: "rgba(26,179,148,0.2)",
+                        strokeColor: "rgba(26,179,148,1)",
+                        pointColor: "rgba(26,179,148,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)", 
+                        data: [19, document.getElementById("circle").value, 28, document.getElementById("square").value , 40, document.getElementById("triangle").value, 19, document.getElementById("star").value]
+                    }]
+                };
+
+            var radarOptions = {
+                scaleShowLine: true,
+                angleShowLineOut: true,
+                scaleShowLabels: false,
+                scaleBeginAtZero: true,
+                angleLineColor: "rgba(0,0,0,.1)",
+                angleLineWidth: 1,
+                pointLabelFontFamily: "'Arial'",
+                pointLabelFontStyle: "normal",
+                pointLabelFontSize: 10,
+                pointLabelFontColor: "#666",
+                pointDot: true,
+                pointDotRadius: 3,
+                pointDotStrokeWidth: 1,
+                pointHitDetectionRadius: 20,
+                datasetStroke: true,
+                datasetStrokeWidth: 2,
+                datasetFill: true,
+                responsive: true,
+            }
+
+            var ctx = document.getElementById("radarChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Radar(radarData, radarOptions);
         });
 
-        var radarData = {
-            labels: ["experience", "observe", "Conceptualization", "Action"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    fillColor: "rgba(220,220,220,0.2)",
-                    strokeColor: "rgba(220,220,220,1)",
-                    pointColor: "rgba(220,220,220,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [65, 59, 90, 81]
-                },
-                {
-                    label: "My Second dataset",
-                    fillColor: "rgba(26,179,148,0.2)",
-                    strokeColor: "rgba(26,179,148,1)",
-                    pointColor: "rgba(26,179,148,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19]
-                }
-            ]
-        };
+        function onclickGraph()
+        {
 
-        var radarOptions = {
-            scaleShowLine: true,
-            angleShowLineOut: true,
-            scaleShowLabels: false,
-            scaleBeginAtZero: true,
-            angleLineColor: "rgba(0,0,0,.1)",
-            angleLineWidth: 1,
-            pointLabelFontFamily: "'Arial'",
-            pointLabelFontStyle: "normal",
-            pointLabelFontSize: 10,
-            pointLabelFontColor: "#666",
-            pointDot: true,
-            pointDotRadius: 3,
-            pointDotStrokeWidth: 1,
-            pointHitDetectionRadius: 20,
-            datasetStroke: true,
-            datasetStrokeWidth: 2,
-            datasetFill: true,
-            responsive: true,
+            console.log("그래프값");
+            alert(document.getElementById("circle").value);
+
+
+            var radarData = {
+                labels: ["experience", "Find Meaning", "observation", "Orderly search", "Conceptualization", "Acquisition", "Action", "Creating"],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [(65 + 81) / 2, 65, (65 + 59) / 2, 59, (59 + 90) / 2, 90, (90 + 81) / 2, 81]
+                    },
+                    {
+                        label: "My Second dataset",
+                        fillColor: "rgba(26,179,148,0.2)",
+                        strokeColor: "rgba(26,179,148,1)",
+                        pointColor: "rgba(26,179,148,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [19, $("#circle").val(), 28, $("#square").val(), 40, $("#triangle").val(), 19, $("#star").val()]
+                    }
+                ]
+            };
+
+            var radarOptions = {
+                scaleShowLine: true,
+                angleShowLineOut: true,
+                scaleShowLabels: false,
+                scaleBeginAtZero: true,
+                angleLineColor: "rgba(0,0,0,.1)",
+                angleLineWidth: 1,
+                pointLabelFontFamily: "'Arial'",
+                pointLabelFontStyle: "normal",
+                pointLabelFontSize: 10,
+                pointLabelFontColor: "#666",
+                pointDot: true,
+                pointDotRadius: 3,
+                pointDotStrokeWidth: 1,
+                pointHitDetectionRadius: 20,
+                datasetStroke: true,
+                datasetStrokeWidth: 2,
+                datasetFill: true,
+                responsive: true,
+            }
+
+            var ctx = document.getElementById("radarChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Radar(radarData, radarOptions);
+
         }
-
-        var ctx = document.getElementById("radarChart").getContext("2d");
-        var myNewChart = new Chart(ctx).Radar(radarData, radarOptions);
-
     </script>
 
 </body>
