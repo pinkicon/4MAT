@@ -2434,3 +2434,99 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2017-01-02T15:15:05: Saving group "D:\NGIT\4MAT\App\env\Lib\site-packages\wheel"
 2017-01-02T15:15:05: End of group "D:\NGIT\4MAT\App\env\Lib\site-packages\wheel"
 2017-01-02T15:15:06: Deleting 0 files
+
+2017-01-02T16:01:56: Start analysis
+2017-01-02T16:01:56: [WARNING] Library was set explicitly - skipping path detection
+2017-01-02T16:01:57: IncludeModulesFromModulePath = win32com
+2017-01-02T16:01:57: Deleting 0 files
+2017-01-02T16:01:57: astropy.CallDepth = 0
+2017-01-02T16:01:57: matplotlib.CallDepth = 3
+2017-01-02T16:01:57: pandas.CallDepth = 0
+2017-01-02T16:01:57: sympy.CallDepth = 0
+2017-01-02T16:01:57: Start group "D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql" with 39 files
+2017-01-02T16:01:58: Parsing "pymysql.charset" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\charset.py")
+2017-01-02T16:01:58: Parsing "pymysql.connections" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\connections.py")
+2017-01-02T16:01:58: Parsing "pymysql.converters" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\converters.py")
+2017-01-02T16:01:58: Parsing "pymysql.cursors" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\cursors.py")
+2017-01-02T16:01:58: Parsing "pymysql.err" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\err.py")
+2017-01-02T16:01:58: Parsing "pymysql.optionfile" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\optionfile.py")
+2017-01-02T16:01:58: Parsing "pymysql.times" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\times.py")
+2017-01-02T16:01:58: Parsing "pymysql.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\util.py")
+2017-01-02T16:01:58: Parsing "pymysql._compat" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\_compat.py")
+2017-01-02T16:01:58: Parsing "pymysql._socketio" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\_socketio.py")
+2017-01-02T16:01:58: Parsing "pymysql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\__init__.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.CLIENT" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\CLIENT.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.COMMAND" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\COMMAND.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.CR" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\CR.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.ER" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\ER.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.FIELD_TYPE" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\FIELD_TYPE.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.FLAG" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\FLAG.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants.SERVER_STATUS" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\SERVER_STATUS.py")
+2017-01-02T16:01:58: Parsing "pymysql.constants" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\constants\__init__.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\base.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_basic" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_basic.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_connection" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_connection.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_converters" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_converters.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_cursor" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_cursor.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_DictCursor" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_DictCursor.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_err" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_err.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_issues" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_issues.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_load_local" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_load_local.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_nextset" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_nextset.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_optionfile" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_optionfile.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.test_SSCursor" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\test_SSCursor.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\__init__.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\__init__.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb.capabilities" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\capabilities.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb.dbapi20" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\dbapi20.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_capabilities" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\test_MySQLdb_capabilities.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_dbapi20" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\test_MySQLdb_dbapi20.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_nonstandard" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\test_MySQLdb_nonstandard.py")
+2017-01-02T16:01:58: Parsing "pymysql.tests.thirdparty.test_MySQLdb" ("D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql\tests\thirdparty\test_MySQLdb\__init__.py")
+2017-01-02T16:01:58: Parsing complete
+2017-01-02T16:01:58: Analyzing "pymysql.charset"
+2017-01-02T16:01:58: Analyzing "pymysql.connections"
+2017-01-02T16:01:58: Analyzing "pymysql.converters"
+2017-01-02T16:01:58: Analyzing "pymysql.cursors"
+2017-01-02T16:01:58: Analyzing "pymysql.err"
+2017-01-02T16:01:58: Analyzing "pymysql.optionfile"
+2017-01-02T16:01:58: Analyzing "pymysql.times"
+2017-01-02T16:01:58: Analyzing "pymysql.util"
+2017-01-02T16:01:58: Analyzing "pymysql._compat"
+2017-01-02T16:01:58: Analyzing "pymysql._socketio"
+2017-01-02T16:01:58: Analyzing "pymysql"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.CLIENT"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.COMMAND"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.CR"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.ER"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.FIELD_TYPE"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.FLAG"
+2017-01-02T16:01:58: Analyzing "pymysql.constants.SERVER_STATUS"
+2017-01-02T16:01:58: Analyzing "pymysql.constants"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.base"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_basic"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_connection"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_converters"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_cursor"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_DictCursor"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_err"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_issues"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_load_local"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_nextset"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_optionfile"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.test_SSCursor"
+2017-01-02T16:01:58: Analyzing "pymysql.tests"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb.capabilities"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb.dbapi20"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_capabilities"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_dbapi20"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb.test_MySQLdb_nonstandard"
+2017-01-02T16:01:58: Analyzing "pymysql.tests.thirdparty.test_MySQLdb"
+2017-01-02T16:01:58: Starting analysis of 39 modules
+2017-01-02T16:02:03: Analysis complete
+2017-01-02T16:02:03: Saving group "D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql"
+2017-01-02T16:02:03: End of group "D:\NGIT\4MAT\App\env\Lib\site-packages\pymysql"
+2017-01-02T16:02:03: Deleting 2 files
+2017-01-02T16:02:03: Deleting "D:\NGIT\4MAT\App\env\.ptvs\pymysql\MySQLdb.idb"
+2017-01-02T16:02:03: Deleting "D:\NGIT\4MAT\App\env\.ptvs\pymysql\_mysql.idb"

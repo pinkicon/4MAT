@@ -6,3 +6,5 @@ from flask import Flask
 app = Flask(__name__)
 
 import App.views
+import pymysql
+

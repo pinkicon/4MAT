@@ -1,47 +1,246 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Flask Application</title>
-    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
+    <title>{{title}}</title>
+
+    <link href="/static/content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="/static/content/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="/static/scripts/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="/static/content/css/animate.css" rel="stylesheet">
+    <link href="/static/content/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Application name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <!--<img alt="image" class="img-circle" src="img/profile_small.jpg" />-->
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="/templates/#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">infraDev</strong>
+                                    </span> <!--<span class="text-muted text-xs block">Art Director <b class="caret"></b></span>-->
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="/templates/profile.html">Profile</a></li>
+                                <li><a href="/templates/contacts.html">Contacts</a></li>
+                                <li><a href="/templates/mailbox.html">Mailbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/templates/login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="/templates/index.html"><i class="fa fa-th-large"></i> <span class="nav-label">4MAT모델</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="{{ url_for('partA') }}"> ::: PART A :::</a></li>
+                            <li><a href="{{ url_for('partB') }}"> ::: PART B ::: </a></li>
+                            <li><a href="{{ url_for('graph') }}"> ::: GRAPH  ::: </a></li> 
+                        </ul>
+                    </li>  
                 </ul>
+
             </div>
+        </nav> 
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            {% block content %}{% endblock %}
         </div>
     </div>
 
-    <div class="container body-content">
-        {% block content %}{% endblock %}
-        <hr />
-        <footer>
-            <p>&copy; {{ year }} - My Flask Application</p>
-        </footer>
-    </div>
+    <!-- Mainly scripts -->
+    <script src="/static/scripts/jquery-2.1.1.js"></script>
+    <script src="/static/scripts/bootstrap.min.js"></script>
+    <script src="/static/scripts/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/scripts/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <script src="/static/scripts/jquery-1.10.2.js"></script>
-    <script src="/static/scripts/bootstrap.js"></script>
-    <script src="/static/scripts/respond.js"></script>
-    {% block scripts %}{% endblock %}
+    <!-- Flot -->
+    <script src="/static/scripts/plugins/flot/jquery.flot.js"></script>
+    <script src="/static/scripts/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="/static/scripts/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="/static/scripts/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="/static/scripts/plugins/flot/jquery.flot.pie.js"></script>
 
+    <!-- Peity -->
+    <script src="/static/scripts/plugins/peity/jquery.peity.min.js"></script>
+    <script src="/static/scripts/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/static/scripts/inspinia.js"></script>
+    <script src="/static/scripts/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="/static/scripts/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="/static/scripts/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="/static/scripts/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="/static/scripts/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="/static/scripts/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="/static/scripts/plugins/toastr/toastr.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            //setTimeout(function() {
+            //    toastr.options = {
+            //        closeButton: true,
+            //        progressBar: true,
+            //        showMethod: 'slideDown',
+            //        timeOut: 4000
+            //    };
+            //    toastr.success('Learning Type Measure', 'Welcome to 4MAT');
+
+            //}, 1300);
+
+
+            var data1 = [
+                [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+            ];
+            var data2 = [
+                [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+            ];
+            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                data1, data2
+            ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 0,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            tickColor: "#d5d5d5",
+                            borderWidth: 1,
+                            color: '#d5d5d5'
+                        },
+                        colors: ["#1ab394", "#464f88"],
+                        xaxis:{
+                        },
+                        yaxis: {
+                            ticks: 4
+                        },
+                        tooltip: false
+                    }
+            );
+
+            var doughnutData = [
+                {
+                    value: 300,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "App"
+                },
+                {
+                    value: 50,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "Software"
+                },
+                {
+                    value: 100,
+                    color: "#b5b8cf",
+                    highlight: "#1ab394",
+                    label: "Laptop"
+                }
+            ];
+
+            //var doughnutOptions = {
+            //    segmentShowStroke: true,
+            //    segmentStrokeColor: "#fff",
+            //    segmentStrokeWidth: 2,
+            //    percentageInnerCutout: 45, // This is 0 for Pie charts
+            //    animationSteps: 100,
+            //    animationEasing: "easeOutBounce",
+            //    animateRotate: true,
+            //    animateScale: false,
+            //};
+
+            //var ctx = document.getElementById("doughnutChart").getContext("2d");
+            //var DoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
+
+            //var polarData = [
+            //    {
+            //        value: 300,
+            //        color: "#a3e1d4",
+            //        highlight: "#1ab394",
+            //        label: "App"
+            //    },
+            //    {
+            //        value: 140,
+            //        color: "#dedede",
+            //        highlight: "#1ab394",
+            //        label: "Software"
+            //    },
+            //    {
+            //        value: 200,
+            //        color: "#b5b8cf",
+            //        highlight: "#1ab394",
+            //        label: "Laptop"
+            //    }
+            //];
+
+            //var polarOptions = {
+            //    scaleShowLabelBackdrop: true,
+            //    scaleBackdropColor: "rgba(255,255,255,0.75)",
+            //    scaleBeginAtZero: true,
+            //    scaleBackdropPaddingY: 1,
+            //    scaleBackdropPaddingX: 1,
+            //    scaleShowLine: true,
+            //    segmentShowStroke: true,
+            //    segmentStrokeColor: "#fff",
+            //    segmentStrokeWidth: 2,
+            //    animationSteps: 100,
+            //    animationEasing: "easeOutBounce",
+            //    animateRotate: true,
+            //    animateScale: false,
+            //};
+            //var ctx = document.getElementById("polarChart").getContext("2d");
+            //var Polarchart = new Chart(ctx).PolarArea(polarData, polarOptions);
+
+        });
+    </script>
 </body>
 </html>

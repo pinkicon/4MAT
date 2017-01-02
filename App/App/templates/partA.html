@@ -1,0 +1,81 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">  
+                <h5>{{ title }}  </h5> 
+            </div>
+            <div class="ibox-title"> 
+                <h5>
+                    <small>{{ message }}</small>
+                </h5>
+            </div>
+            <div class="ibox-content">
+                <form method="get" class="form-horizontal"> 
+                    <!--시작 -->
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group"> 
+                        <label class="col-sm-2 control-label"><small> 나는 __ 에 탁월하다</small></label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="실현 가능한 결정을 내리는것 ">
+                            <div class="input-group-btn">
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">1<span class="caret"></span></button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li> 
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" value="확실한 결론을 내리는것 ">
+                            <div class="input-group-btn">
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">2 <span class="caret"></span></button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li> 
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" value="숨겨진 상관관계를 발견하는것 ">
+                            <div class="input-group-btn">
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">3 <span class="caret"></span></button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li> 
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" value="타인의 감정을 존중하는 것  ">
+                            <div class="input-group-btn">
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">4 <span class="caret"></span></button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li> 
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
+
+                        </div> 
+                    </div>
+
+                    <div class="hr-line-dashed"></div>
+                     
+                    <!-- 끝 -->  
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <button class="btn btn-white" type="submit">Cancel</button> 
+                            <button class="btn btn-primary" type="submit">Save</button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
