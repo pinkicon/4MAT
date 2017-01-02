@@ -23,15 +23,9 @@
                         <div class="input-group">
                             {% for choice in choices %}
                             {% if exam[0] == choice[0] %}
-                            <input type="text" class="form-control" value="{{choice[2]}}" hidden="{{choice[4]}}">
-                            <div class="input-group-btn">
-                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">1<span class="caret"></span></button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li> 
-                                    <li><a href="#">4</a></li>
-                                </ul>
+                            <input type="text" class="form-control" value="{{choice[2]}}" hidden="{{choice[4]}}"> 
+                            <div>
+                                 <input type="text" name="{{choice[3]}}_txt" class="form-control" hidden="{{choice[4]}}" > 
                             </div> 
                             {% endif %}
                             {% endfor %}
