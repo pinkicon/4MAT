@@ -30,6 +30,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App\database.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App\flask_sqlalchemy_direct.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App\models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="App\__init__.py" />
     <Compile Include="App\views.py" />

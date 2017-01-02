@@ -2530,3 +2530,404 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2017-01-02T16:02:03: Deleting 2 files
 2017-01-02T16:02:03: Deleting "D:\NGIT\4MAT\App\env\.ptvs\pymysql\MySQLdb.idb"
 2017-01-02T16:02:03: Deleting "D:\NGIT\4MAT\App\env\.ptvs\pymysql\_mysql.idb"
+
+2017-01-02T16:43:38: Start analysis
+2017-01-02T16:43:38: [WARNING] Library was set explicitly - skipping path detection
+2017-01-02T16:43:38: IncludeModulesFromModulePath = win32com
+2017-01-02T16:43:39: Deleting 0 files
+2017-01-02T16:43:39: Scraping sqlalchemy.cprocessors
+2017-01-02T16:43:39: Command: D:\NGIT\4MAT\App\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape sqlalchemy.cprocessors D:\NGIT\4MAT\App\env\Lib\site-packages D:\NGIT\4MAT\App\env\.ptvs\sqlalchemy\sqlalchemy.cprocessors
+2017-01-02T16:43:39: Scraping sqlalchemy.cresultproxy
+2017-01-02T16:43:39: Command: D:\NGIT\4MAT\App\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape sqlalchemy.cresultproxy D:\NGIT\4MAT\App\env\Lib\site-packages D:\NGIT\4MAT\App\env\.ptvs\sqlalchemy\sqlalchemy.cresultproxy
+2017-01-02T16:43:40: Scraping sqlalchemy.cutils
+2017-01-02T16:43:40: Command: D:\NGIT\4MAT\App\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape sqlalchemy.cutils D:\NGIT\4MAT\App\env\Lib\site-packages D:\NGIT\4MAT\App\env\.ptvs\sqlalchemy\sqlalchemy.cutils
+2017-01-02T16:43:40: Scraped 3 files
+2017-01-02T16:43:40: astropy.CallDepth = 0
+2017-01-02T16:43:40: matplotlib.CallDepth = 3
+2017-01-02T16:43:40: pandas.CallDepth = 0
+2017-01-02T16:43:40: sympy.CallDepth = 0
+2017-01-02T16:43:40: Start group "D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy" with 189 files
+2017-01-02T16:43:41: Parsing "sqlalchemy.events" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\events.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.exc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\exc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.inspection" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\inspection.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.interfaces" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\interfaces.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.log" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\log.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.pool" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\pool.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.processors" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\processors.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.schema" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\schema.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.types" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\types.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.connectors.mxodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\connectors\mxodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.connectors.pyodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\connectors\pyodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.connectors.zxJDBC" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\connectors\zxJDBC.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.connectors" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\connectors\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.databases" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\databases\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.firebird.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\firebird\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.firebird.fdb" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\firebird\fdb.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.firebird.kinterbasdb" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\firebird\kinterbasdb.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.firebird" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\firebird\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.adodbapi" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\adodbapi.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.information_schema" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\information_schema.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.mxodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\mxodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.pymssql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\pymssql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.pyodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\pyodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql.zxjdbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\zxjdbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mssql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mssql\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.cymysql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\cymysql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.enumerated" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\enumerated.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.gaerdbms" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\gaerdbms.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.json" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\json.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.mysqlconnector" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\mysqlconnector.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.mysqldb" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.oursql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\oursql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.pymysql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.pyodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\pyodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.reflection" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\reflection.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.types" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\types.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql.zxjdbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\zxjdbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.mysql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\mysql\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.oracle.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\oracle\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.oracle.cx_oracle" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\oracle\cx_oracle.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.oracle.zxjdbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\oracle\zxjdbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.oracle" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\oracle\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.array" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\array.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.dml" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\dml.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.ext" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\ext.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.hstore" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\hstore.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.json" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\json.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.pg8000" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\pg8000.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.psycopg2" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.psycopg2cffi" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2cffi.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.pygresql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\pygresql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.pypostgresql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\pypostgresql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.ranges" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\ranges.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql.zxjdbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\zxjdbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.postgresql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\postgresql\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sqlite.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sqlite\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sqlite.pysqlcipher" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sqlite\pysqlcipher.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sqlite.pysqlite" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sqlite" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sqlite\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sybase.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sybase\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sybase.mxodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sybase\mxodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sybase.pyodbc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sybase\pyodbc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sybase.pysybase" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sybase\pysybase.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.dialects.sybase" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\dialects\sybase\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.default" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\default.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.interfaces" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\interfaces.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.reflection" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\reflection.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.result" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\result.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.strategies" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\strategies.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.threadlocal" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\threadlocal.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.url" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\url.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\util.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.engine" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\engine\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event.api" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\api.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event.attr" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\attr.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event.legacy" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\legacy.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event.registry" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\registry.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.event" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\event\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.associationproxy" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\associationproxy.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.automap" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\automap.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.baked" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\baked.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.compiler" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\compiler.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.horizontal_shard" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\horizontal_shard.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.hybrid" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\hybrid.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.indexable" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\indexable.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.instrumentation" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\instrumentation.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.mutable" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\mutable.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.orderinglist" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\orderinglist.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.serializer" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\serializer.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.declarative.api" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\declarative\api.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.declarative.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\declarative\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.declarative.clsregistry" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\declarative\clsregistry.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.ext.declarative" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\ext\declarative\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.attributes" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\attributes.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.collections" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\collections.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.dependency" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\dependency.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.deprecated_interfaces" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\deprecated_interfaces.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.descriptor_props" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\descriptor_props.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.dynamic" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\dynamic.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.evaluator" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\evaluator.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.events" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\events.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.exc" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\exc.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.identity" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\identity.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.instrumentation" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\instrumentation.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.interfaces" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\interfaces.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.loading" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\loading.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.mapper" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\mapper.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.path_registry" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\path_registry.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.persistence" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\persistence.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.properties" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\properties.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.query" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\query.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.relationships" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\relationships.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.scoping" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\scoping.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.session" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\session.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.state" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\state.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.strategies" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\strategies.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.strategy_options" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\strategy_options.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.sync" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\sync.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.unitofwork" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\unitofwork.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\util.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.orm" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\orm\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.annotation" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\annotation.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.compiler" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\compiler.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.crud" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\crud.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.ddl" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\ddl.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.default_comparator" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\default_comparator.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.dml" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\dml.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.elements" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\elements.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.expression" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\expression.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.functions" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\functions.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.naming" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\naming.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.operators" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\operators.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.schema" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\schema.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.selectable" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\selectable.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.sqltypes" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\sqltypes.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.type_api" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\type_api.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\util.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql.visitors" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\visitors.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.sql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\sql\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.assertions" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\assertions.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.assertsql" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\assertsql.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.config" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\config.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.engines" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\engines.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.entities" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\entities.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.exclusions" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\exclusions.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.fixtures" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\fixtures.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.mock" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\mock.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.pickleable" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\pickleable.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.profiling" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\profiling.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.provision" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\provision.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.replay_fixture" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\replay_fixture.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.requirements" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\requirements.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.runner" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\runner.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.schema" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\schema.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\util.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.warnings" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\warnings.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.plugin.bootstrap" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\plugin\bootstrap.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.plugin.noseplugin" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\plugin\noseplugin.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.plugin.plugin_base" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\plugin\plugin_base.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.plugin.pytestplugin" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\plugin\pytestplugin.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.plugin" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\plugin\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_ddl" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_ddl.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_dialect" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_dialect.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_insert" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_insert.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_reflection" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_reflection.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_results" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_results.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_select" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_select.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_sequence" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_sequence.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_types" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_types.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite.test_update_delete" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\test_update_delete.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.testing.suite" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\testing\suite\__init__.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util.compat" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\compat.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util.deprecations" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\deprecations.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util.langhelpers" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\langhelpers.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util.queue" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\queue.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util.topological" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\topological.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util._collections" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\_collections.py")
+2017-01-02T16:43:41: Parsing "sqlalchemy.util" ("D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy\util\__init__.py")
+2017-01-02T16:43:41: Parsing complete
+2017-01-02T16:43:41: Analyzing "sqlalchemy.events"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.exc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.inspection"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.interfaces"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.log"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.pool"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.processors"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.schema"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.types"
+2017-01-02T16:43:41: Analyzing "sqlalchemy"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.connectors.mxodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.connectors.pyodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.connectors.zxJDBC"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.connectors"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.databases"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.firebird.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.firebird.fdb"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.firebird.kinterbasdb"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.firebird"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.adodbapi"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.information_schema"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.mxodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.pymssql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.pyodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql.zxjdbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mssql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.cymysql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.enumerated"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.gaerdbms"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.json"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.mysqlconnector"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.mysqldb"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.oursql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.pymysql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.pyodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.reflection"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.types"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql.zxjdbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.mysql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.oracle.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.oracle.cx_oracle"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.oracle.zxjdbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.oracle"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.array"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.dml"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.ext"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.hstore"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.json"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.pg8000"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.psycopg2"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.psycopg2cffi"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.pygresql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.pypostgresql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.ranges"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql.zxjdbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.postgresql"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sqlite.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sqlite.pysqlcipher"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sqlite.pysqlite"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sqlite"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sybase.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sybase.mxodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sybase.pyodbc"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sybase.pysybase"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.dialects.sybase"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.default"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.interfaces"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.reflection"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.result"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.strategies"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.threadlocal"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.url"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine.util"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.engine"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event.api"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event.attr"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event.legacy"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event.registry"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.event"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.associationproxy"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.automap"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.baked"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.compiler"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.horizontal_shard"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.hybrid"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.indexable"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.instrumentation"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.mutable"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.orderinglist"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.serializer"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.declarative.api"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.declarative.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.declarative.clsregistry"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.ext.declarative"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.attributes"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.base"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.collections"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.dependency"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.deprecated_interfaces"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.descriptor_props"
+2017-01-02T16:43:41: Analyzing "sqlalchemy.orm.dynamic"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.evaluator"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.events"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.exc"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.identity"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.instrumentation"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.interfaces"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.loading"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.mapper"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.path_registry"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.persistence"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.properties"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.query"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.relationships"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.scoping"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.session"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.state"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.strategies"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.strategy_options"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.sync"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.unitofwork"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm.util"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.orm"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.annotation"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.base"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.compiler"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.crud"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.ddl"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.default_comparator"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.dml"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.elements"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.expression"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.functions"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.naming"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.operators"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.schema"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.selectable"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.sqltypes"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.type_api"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.util"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql.visitors"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.sql"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.assertions"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.assertsql"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.config"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.engines"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.entities"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.exclusions"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.fixtures"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.mock"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.pickleable"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.profiling"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.provision"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.replay_fixture"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.requirements"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.runner"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.schema"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.util"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.warnings"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.plugin.bootstrap"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.plugin.noseplugin"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.plugin.plugin_base"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.plugin.pytestplugin"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.plugin"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_ddl"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_dialect"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_insert"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_reflection"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_results"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_select"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_sequence"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_types"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite.test_update_delete"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.testing.suite"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util.compat"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util.deprecations"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util.langhelpers"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util.queue"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util.topological"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util._collections"
+2017-01-02T16:43:42: Analyzing "sqlalchemy.util"
+2017-01-02T16:43:42: Starting analysis of 189 modules
+2017-01-02T16:43:54: Analysis complete
+2017-01-02T16:43:54: Saving group "D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy"
+2017-01-02T16:43:56: End of group "D:\NGIT\4MAT\App\env\Lib\site-packages\sqlalchemy"
+2017-01-02T16:43:56: Deleting 0 files
