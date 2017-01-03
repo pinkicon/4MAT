@@ -25,8 +25,22 @@
         <p>You can easily publish to Microsoft Azure using Python Tools for Visual Studio. Find out how you can host your application using a free trial today.</p>
         <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
     </div>-->
-
-    
+    <form class="m-t" role="form" method="post" >
+          <div class="form-group">
+           {% if not session["id"] %}
+            <input type="text" class="form-control" placeholder="Username" name="id" required="">
+            {% else %}
+                hi!   {{session["id"]}} ! 
+            {% endif %}
+        </div>
+        {% if not session["id"] %}
+          <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+        {% else  %}
+           <button type="submit" class="btn btn-primary block full-width m-b">logout</button>
+        {% endif %}
+         <div class="form-group">
+         </div> 
+      </form> 
 </div>
 
 {% endblock %}
